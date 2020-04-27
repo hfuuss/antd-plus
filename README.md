@@ -3,10 +3,22 @@
 
 # 如何使用
 
+```bash
+$ npm i @@hfuuss/antd-plus
+```
 
+```js
+import React from 'react';
+import { Button } from '@hfuuss/antd-plus';
+export default () => <Button/>;
+```
+
+# todolist
+* 规范目录
+* 规范测试目录
+* 打包优化
 
 # 如何开发
-## 快速开始
 
 安装依赖,
 

@@ -1,4 +1,8 @@
 export default {
-  esm: 'rollup',
-  cjs: 'rollup',
+  esm: 'babel',
+  cjs: 'babel',
+  umd: {
+    name: 'antd-plus',
+  },
+  disableTypeCheck: true,
 };
