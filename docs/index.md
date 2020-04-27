@@ -1,9 +1,9 @@
 ---
 hero:
-  title: Library Name
-  desc: dumi library site example
+  title: antd-plus
+  desc: antd-plus 基于antd的私有组件库
   actions:
-    - text: Getting Started
+    - text: 快速开始
       link: /components
 features:
   - icon: https://gw.alipayobjects.com/zos/bmw-prod/881dc458-f20b-407b-947a-95104b5ec82b/k79dm8ih_w144_h144.png
@@ -18,4 +18,4 @@ features:
 footer: Open-source MIT Licensed | Copyright © 2020<br />Powered by [dumi](https://d.umijs.org)
 ---
 
-## Hello dumi!
+## Hello antd-plus!
