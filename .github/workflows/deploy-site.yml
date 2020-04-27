@@ -14,10 +14,10 @@ jobs:
       - name: build
         run: |
           npm run init
-          npm run build:doc
+          npm run docs:build
       - name: deploy
         env:
           BUILD_ID: ${{ github.sha }}
           ZEIT_TOKEN: ${{ secrets.ZEIT_TOKEN }}
         run: |
-          now --token=$ZEIT_TOKEN --confirm --prod --force --scope umijs
+          now --token=$ZEIT_TOKEN --confirm --prod --force

@@ -6,13 +6,13 @@ nav:
 
 ## Foo
 
-Demo:
+案例:
 
 ```tsx
 import React from 'react';
 import { Foo } from '@jy/antd-plus';
 
-export default () => <Foo title="First Demo" />;
+export default () => <Foo title="九月大人人很好" />;
 ```
 
-More skills for writing demo: https://d.umijs.org/guide/demo-principle
+更多技巧: https://d.umijs.org/guide/demo-principle
