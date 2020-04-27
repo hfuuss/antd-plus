@@ -1,12 +1,12 @@
 {
   "private": false,
   "name": "@hfuuss/antd-plus",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "scripts": {
     "init": "rm -rf node_modules && npm install && npm run build",
     "start": "dumi dev",
     "docs:build": "dumi build",
-    "build": "father-build && npm run compile",
+    "build": "node ./scripts/clean-old-build.js && father-build && npm run compile && node ./scripts/build-wind-up.js",
     "compile": "tsc --declarationDir ./lib && tsc --declarationDir ./es",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
     "test": "umi-test",
