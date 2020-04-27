@@ -4,15 +4,15 @@ nav:
   path: /components
 ---
 
-## Foo
+## Button
 
 案例:
 
 ```tsx
 import React from 'react';
-import { Foo } from '@hfuuss/antd-plus';
+import { Button } from '@hfuuss/antd-plus';
 
-export default () => <Foo title="九月大人人很好" />;
+export default () => <Button/>;
 ```
 
 更多技巧: https://d.umijs.org/guide/demo-principle

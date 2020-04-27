@@ -1,12 +1,13 @@
 {
   "private": false,
-  "name": "@jy/antd-plus",
-  "version": "0.0.1",
+  "name": "@hfuuss/antd-plus",
+  "version": "0.0.2",
   "scripts": {
     "init": "rm -rf node_modules && npm install && npm run build",
     "start": "dumi dev",
     "docs:build": "dumi build",
-    "build": "father-build",
+    "build": "father-build && npm run compile",
+    "compile": "tsc --declarationDir ./lib && tsc --declarationDir ./es",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
     "test": "umi-test",
     "test:coverage": "umi-test --coverage"
@@ -15,8 +16,19 @@
   "module": "dist/index.esm.js",
   "typings": "dist/index.d.ts",
   "gitHooks": {
-    "pre-commit": "lint-staged"
+    "precommit": "lint-staged"
   },
+  "files": [
+    "dist",
+    "lib",
+    "es",
+    "package.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hfuuss/antd-plus.git"
+  },
+  "homepage": "https://github.com//hfuuss/antd-plus",
   "lint-staged": {
     "*.{js,jsx,less,md,json}": [
       "prettier --write"
@@ -28,6 +40,8 @@
   "dependencies": {
     "@umijs/preset-react": "1.x",
     "@umijs/test": "^3.0.5",
+    "antd": "^4.1.5",
+    "del": "^5.1.0",
     "dumi": "^1.0.6",
     "father-build": "^1.17.2",
     "lint-staged": "^10.0.7",
@@ -37,6 +51,7 @@
     "yorkie": "^2.0.0"
   },
   "devDependencies": {
+    "@types/jest": "^25.2.1",
     "typescript": "^3.8.3"
   }
 }
