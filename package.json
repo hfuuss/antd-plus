@@ -31,6 +31,7 @@
     "dumi": "^1.0.6",
     "father-build": "^1.17.2",
     "lint-staged": "^10.0.7",
+    "now": "^18.0.0",
     "prettier": "^1.19.1",
     "react": "^16.12.0",
     "yorkie": "^2.0.0"
