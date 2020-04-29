@@ -45,3 +45,11 @@ $ npm run docs:build
 ```bash
 $ npm run build
 ```
+# 如何发布
+修改 package.json 版本
+
+```bash
+$ npm publish // 发布组件库
+```
+
+

@@ -4,7 +4,7 @@ nav:
   path: /components
 ---
 
-## Button
+# Button
 
 案例:
 
