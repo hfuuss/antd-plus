@@ -3,7 +3,7 @@
   "name": "@hfuuss/antd-plus",
   "version": "0.0.4",
   "scripts": {
-    "init": "rm -rf node_modules && npm install && npm run build",
+    "init": "rm -rf node_modules && npm install",
     "start": "dumi dev",
     "docs:build": "dumi build",
     "build": "node ./scripts/clean-old-build.js && father-build && npm run compile && node ./scripts/build-wind-up.js",

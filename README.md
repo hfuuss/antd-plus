@@ -56,7 +56,7 @@ $ git push origin -u master
 通过 `father-build` 构建组件库,
 
 ```bash
-$ npm run build
+$ npm run init && npm run build
 ```
 
 发布组件库到npm
