@@ -65,3 +65,8 @@ $ npm publish
 ```
 
 
+# 其他
+开发的过程发现每次push的时候，都会发布到自动发文档。查了一下文档，原来是我接了git持续集成的功能。
+这样并不适合我的项目，我们项目，应该在每次realease的时候再发布。到setting里面，取消持续集成即可。
+
+文档地址： https://vercel.com/docs/v2/git-integrations
