@@ -6,7 +6,7 @@ nav:
 
 # Button
 
-案例:
+这是一个demo案例:
 
 ```tsx
 import React from 'react';

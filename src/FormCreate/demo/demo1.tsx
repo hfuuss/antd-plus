@@ -3,9 +3,10 @@
  * desc: 这里是默认用法
  */
 
-import React, { useState } from 'react';
+import React,{useState} from 'react';
 import {Input, DatePicker, Radio, Select, Checkbox, Switch} from 'antd'
-import { FormFilter } from '@hfuuss/antd-plus';
+import { FormCreate } from '@hfuuss/antd-plus';
+
 
 const {TextArea} = Input
 const RadioGroup = Radio.Group
@@ -116,11 +117,10 @@ const items = [
     options: {valuePropName: 'checked', initialValue: false},
   },
 ]
-
 export default () => {
   const [state,setState] = useState({})
   return <div>
-     <FormFilter items={items} onQuery={values => setState(values)}/>
+     <FormCreate items={items} onQuery={values => setState(values)}/>
      values: {JSON.stringify(state)}
   </div>
 };

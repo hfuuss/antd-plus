@@ -14,8 +14,9 @@ interface ItemProps {
   label: string,
   key: string,
   required: boolean,
-  component: React.ReactElement,
+  component?: React.ReactElement,
   rules?: any[],
+  options?: any,
 }
 export interface FormFilterProps {
   items: ItemProps [],
@@ -35,10 +36,11 @@ const FormFilter = ({items,onQuery}: FormFilterProps) => {
   }
 
   const renderFormItem = ({item,isShow} : {item:ItemProps, isShow:boolean}) => {
-    const {label, key, required, component, rules} = item
+    const {label, key, required, component, rules,  options ={}} = item
+    // console.log(options,'options')
     return (
       <Col span={8} key={key} style={{display: isShow ? 'block' : 'none'}}>
-        <Form.Item label={label} name={key} rules={rules || [{required, message: `${label}为空`}]} className={styles.form_item}>
+        <Form.Item {...options}  label={label} name={key} rules={rules || [{required, message: `${label}为空`}]} className={styles.form_item}>
           {component || <Input />}
         </Form.Item>
       </Col>

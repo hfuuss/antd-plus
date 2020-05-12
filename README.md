@@ -16,9 +16,15 @@ export default () => <Button/>;
 
 # todolist
 
-- [ ] 规范目录
-- [ ] 规范测试目录
-- [*] 发布优化
+- [x] 规范目录
+- [x] 发布优化
+- [x] 规范测试目录
+- [ ] 基于antd的 增删改查组件 https://plus.getshell.cn/ 目前已经有一个【查询组件】
+- [ ] 定制一个后端接口协议 改造成通用的解决方案 (旧项目可以增加一层bff对接前后端协议)
+- [ ] curd基础组件积累到一定程度，可配置化开发
+• 切不可像  https://protable.ant.design/ 过度封装。(服务内部系统可以)
+• 尽量拆分到小颗粒,遵循低耦合，高内聚的思想。推崇 组合模式
+• 参考 antd pro，ice pro 等系统的布局
 
 # 如何开发
 
@@ -39,8 +45,16 @@ $ npm start
 ```bash
 $ npm run docs:build
 ```
+# 如何发布
 
-# 如何发布文档
+## 发布前测试
+```bash
+$ npm run test
+$ npm run test:coverage
+```
+
+
+## 如何发布文档
 
 ```bash
 $ git push origin -u master
@@ -49,7 +63,7 @@ $ git push origin -u master
 创建releases,自动构建到https://plus.getshell.cn/
 
 
-# 如何发布组件库
+## 如何发布组件库
 
 修改 package.json 版本
 

@@ -1,20 +1,20 @@
 
 ---
-title: FormFilter
+title: FormCreate
 nav:
   title: 组件
   path: /components
 group:
-  title: retrieve
-  path: /retrieve
-  order: 4
+  title: create
+  path: /create
+  order: 1
 ---
 
 
 # FormFilter
 
-一个页面中的查询组件
-> 这个组件一般用于 查询过滤条件
+一个页面中的添加组件
+> 这个组件一般用于 添加数据
 
 
 ## 代码演示
@@ -26,7 +26,6 @@ group:
 
 ## API
 ```javascript
-
 interface ItemProps {
   label: string,
   key: string,
@@ -34,6 +33,7 @@ interface ItemProps {
   component?: React.ReactElement,
   rules?: any[],
   options?: any,
+  isHide?: boolean,
 }
 export interface FormFilterProps {
   items: ItemProps [],
@@ -57,3 +57,4 @@ export interface FormFilterProps {
 | component            | antd中的表单组件  |  React.ReactElement           |         -      |
 | rules            | antd中的表单组件的rules  |  any[]           |         -      |
 | options            | antd中的表单Form.Item其他配置，例如设置初始值  |  object           |         -      |
+| isHide            | 是否隐藏该Item  | boolean           |         -      |
