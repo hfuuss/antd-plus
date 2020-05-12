@@ -20,4 +20,4 @@ jobs:
           BUILD_ID: ${{ github.sha }}
           ZEIT_TOKEN: ${{ secrets.ZEIT_TOKEN }}
         run: |
-          now dist --token=$ZEIT_TOKEN --confirm --prod --force
+          now dist -n antd-plus --token=$ZEIT_TOKEN --confirm --prod --force
