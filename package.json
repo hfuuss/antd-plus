@@ -1,8 +1,9 @@
 {
   "private": false,
   "name": "@hfuuss/antd-plus",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "scripts": {
+    "father-build": "father-build",
     "init": "rm -rf node_modules && npm install",
     "start": "dumi dev",
     "docs:build": "dumi build",
@@ -12,9 +13,9 @@
     "test": "umi-test",
     "test:coverage": "umi-test --coverage"
   },
-  "main": "dist/index.js",
-  "module": "dist/index.esm.js",
-  "typings": "dist/index.d.ts",
+  "main": "./lib/index.js",
+  "module": "./es/index.js",
+  "types": "./dist/index.d.ts",
   "gitHooks": {
     "precommit": "lint-staged"
   },
