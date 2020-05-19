@@ -20,7 +20,7 @@ interface ItemProps {
 
 }
 
-export interface FormCreateProps {
+export interface FormUpdateProps {
   items: ItemProps [] | any,
   onQuery: (values: Store) => void;
   layout?: any,
@@ -28,7 +28,7 @@ export interface FormCreateProps {
 
 
 
-const FormCreate = ({items,onQuery,layout}: FormCreateProps) => {
+const FormUpdate = ({items,onQuery,layout}: FormUpdateProps) => {
 
   const [form] = Form.useForm()
 
@@ -71,4 +71,4 @@ const FormCreate = ({items,onQuery,layout}: FormCreateProps) => {
     </Form>
   );
 };
-export default FormCreate
+export default FormUpdate

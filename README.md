@@ -19,7 +19,7 @@ export default () => <Button/>;
 - [x] 规范目录
 - [x] 发布优化
 - [x] 规范测试目录
-- [ ] 基于antd的 增删改查组件 https://plus.getshell.cn/ 目前已经有一个【查询组件】
+- [x] 基于antd的 增删改查组件 https://plus.getshell.cn/ 目前已经有一个【查询组件】
 - [ ] 定制一个后端接口协议 改造成通用的解决方案 (旧项目可以增加一层bff对接前后端协议)
 - [ ] curd基础组件积累到一定程度，可配置化开发
 • 切不可像  https://protable.ant.design/ 过度封装。(服务内部系统可以)

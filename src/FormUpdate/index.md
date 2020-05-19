@@ -1,20 +1,20 @@
 
 ---
-title: FormCreate
+title: FormUpdate
 nav:
   title: 组件
   path: /components
 group:
-  title: create
-  path: /create
+  title: update
+  path: /update
   order: 1
 ---
 
 
-# FormFilter
+# FormUpdate
 
-一个页面中的添加组件
-> 这个组件一般用于 添加数据
+一个页面中的更新数据
+> 这个组件一般用于 更新数据
 
 
 ## 代码演示
@@ -23,7 +23,7 @@ group:
 
 <code src="./demo/demo1.tsx" />
 
-### 弹框新增用法
+### 弹框修改用法
 
 <code src="./demo/demo2.tsx" />
 
