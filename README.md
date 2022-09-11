@@ -84,3 +84,4 @@ $ npm publish
 这样并不适合我的项目，我们项目，应该在每次realease的时候再发布。到setting里面，取消持续集成即可。
 
 文档地址： https://vercel.com/docs/v2/git-integrations
+发布
